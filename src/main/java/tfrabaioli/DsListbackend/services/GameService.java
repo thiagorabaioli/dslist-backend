@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import tfrabaioli.DsListbackend.dto.GameDTO;
 import tfrabaioli.DsListbackend.dto.GameMinDTO;
 import tfrabaioli.DsListbackend.entities.Game;
+import tfrabaioli.DsListbackend.projections.GameMinProjection;
 import tfrabaioli.DsListbackend.repositories.GameRepository;
 
 @Service
@@ -31,6 +32,15 @@ public class GameService {
 		GameDTO dto = new GameDTO(obj);
 		return dto;
 	}
+	
+	@Transactional(readOnly = true)
+	public List<GameMinDTO> findByList(Long id){
+		List<GameMinProjection> list = repo.searchByList(id);
+		List<GameMinDTO> listDto = list.stream().map(x -> new GameMinDTO(x)).toList();
+		return listDto;
+	}
+	
+	
 	
 	
 

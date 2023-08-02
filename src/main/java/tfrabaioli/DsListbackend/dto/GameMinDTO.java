@@ -1,6 +1,7 @@
 package tfrabaioli.DsListbackend.dto;
 
 import tfrabaioli.DsListbackend.entities.Game;
+import tfrabaioli.DsListbackend.projections.GameMinProjection;
 
 public class GameMinDTO {
 	
@@ -28,6 +29,15 @@ public class GameMinDTO {
 		this.img_url = entity.getImg_url();
 		this.shortDescription = entity.getShortDescription();
 	}
+	
+	public GameMinDTO(GameMinProjection projection) {
+		this.id = projection.getId();
+		this.title = projection.getTitle();
+		this.year = projection.getYear();
+		this.img_url = projection.getImgUrl();
+		this.shortDescription = projection.getShortDescription();
+	}
+	
 
 	public Long getId() {
 		return id;
