@@ -4,6 +4,12 @@
 
 ![Modelo de domínio DSList](https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/dslist-model.png)
 
+## Licença
+
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/thiagorabaioli/dslist-backend/blob/main/LICENSE) 
+
+
+
 ## Trechos de código
 
 ### Plug-in Maven
