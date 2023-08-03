@@ -1,5 +1,21 @@
 # Projeto DSList
 
+
+# Autor
+
+Thiago Ferdinando Rabaioli
+
+[https://www.linkedin.com/rabaioli37](https://www.linkedin.com/in/rabaioli37/)
+
+# Sobre o projeto
+
+DsList-backend é uma API Java RestFul web construída para testar requisições via Postman.
+
+A aplicação consiste em uma pesquisa de uma lista de Jogos com o intuíto de saber a que plataforma os jogos pertencem e em que posição o jogo se encontra e pertence nesta lista. 
+Os dados foram previamente inseridos na Base de dados.
+
+
+
 ## Modelo de domínio DSList
 
 ![Modelo de domínio DSList](https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/dslist-model.png)
@@ -8,6 +24,12 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/thiagorabaioli/dslist-backend/blob/main/LICENSE) 
 
+# Tecnologias utilizadas
+## Back end
+- Java
+- Spring Boot
+- JPA / Hibernate
+- Maven
 
 
 ## Trechos de código
